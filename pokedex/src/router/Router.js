@@ -1,14 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../pages/home/Home";
-import DetalhePokemon from "../pages/detalhePokemon/DetalhePokemon";
-import Pokedex from "../pages/pokedex/Pokedex";
+import Home from "../pages/HomePage/Home";
+import DetailPokemon from "../pages/DetailPokemonPage/DetailPokemon";
+import Pokedex from "../pages/PokedexPage/Pokedex";
+import Header from "../Header/Header";
 
 export const router = () => {
   <BrowserRouter>
+    <Header />
     <Routes>
       <Route index element={<Home />} />
       <Route path="/Pokedex" element={<Pokedex />} />
-      <Route path="/DetalhePokemon" element={<DetalhePokemon />} />
+      <Route path="/DetailPokemon" element={<DetailPokemon />} />
     </Routes>
   </BrowserRouter>;
 };
