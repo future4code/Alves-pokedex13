@@ -4,13 +4,21 @@ import DetailPokemon from "../pages/DetailPokemonPage/DetailPokemon";
 import Pokedex from "../pages/PokedexPage/Pokedex";
 import Header from "../Header/Header";
 
-export const router = () => {
-  <BrowserRouter>
-    <Header />
-    <Routes>
-      <Route index element={<Home />} />
-      <Route path="/Pokedex" element={<Pokedex />} />
-      <Route path="/DetailPokemon" element={<DetailPokemon />} />
-    </Routes>
-  </BrowserRouter>;
+const Router = () => {
+  return (
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route exact path={"/"} element={<Home />} />
+
+        <Route exact path={"/pokedex"} element={<Pokedex />} />
+
+        <Route exact path={"/pokemon/:id"} element={<DetailPokemon />} />
+
+        <Route exact path={"*"} element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  );
 };
+
+export default Router;
