@@ -1,12 +1,11 @@
-import { Navigate, useNavigate } from "react-router-dom";
-
-export const gotDetailPokemon = () => {
-  Navigate(`/detalhe`);
+export const goToHome = (navigate) => {
+  navigate("/");
 };
 
-export const gotHome = () => {
-  Navigate(`/Home`);
+export const goToPokedex = (navigate) => {
+  navigate("/pokedex");
 };
-export const gotPokedex = () => {
-  Navigate(`/Pokedex`);
+
+export const goToPokemonDetail = (navigate, id) => {
+  navigate(`/pokemon/${id}`);
 };
