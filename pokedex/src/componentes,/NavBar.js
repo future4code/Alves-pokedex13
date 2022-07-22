@@ -6,9 +6,9 @@ return(
     <div>
         <nav>
              <img
-             alt="pokeApi-logo"
-             src="logoImg"
-              className="navBar-img"/> 
+              alt="pokeApi-logo"
+              src={logoImg}
+              className="navbar-img"/> 
         </nav>
     </div>
 )
