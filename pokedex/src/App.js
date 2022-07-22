@@ -1,3 +1,4 @@
+
 import React,{useEffect,useState} from 'react';
 import './App.css';
 import Navbar from './componentes,/NavBar';
@@ -44,4 +45,5 @@ function App() {
   );
   
   }
+
 export default App;
